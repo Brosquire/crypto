@@ -8,7 +8,7 @@ class Block {
   }
 }
 
-//new Block class instance with dummy values
+// new Block class instance with dummy values
 const block1 = new Block({
   lastHash: "foo-lastHash",
   hash: "foo-hash",
@@ -16,3 +16,6 @@ const block1 = new Block({
   timestamp: "01/01/01"
 });
 console.log("block1", block1);
+
+//node.js syntax to export and share js files among other js files
+module.exports = Block;
